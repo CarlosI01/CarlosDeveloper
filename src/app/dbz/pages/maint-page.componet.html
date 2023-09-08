@@ -1,0 +1,13 @@
+<div class="container">
+    <h1 class="">Mugiwuaras..</h1>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <app-list [characterList]="Character" (onDelete)="OnDeleteCharacter($event)"></app-list>
+        </div>
+        <div class="col">
+           <app-add-character (onNewCharacter)="AddCharacter($event)" ></app-add-character>
+        </div>
+    </div>
+</div>
+
